@@ -1,0 +1,260 @@
+
+body {
+    color:whitesmoke;
+    background-color: #121212;
+    font-family: 'panton';
+    margin: 0;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s;
+}
+
+@font-face {
+    font-family: 'panton';
+    src: url('/fonts/panton.woff2') format('woff2'),
+         url('/fonts/panton.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav {
+    z-index: 99 !important;
+    height: 6vh;
+    background: whitesmoke;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 15px;
+    border-radius: 20px;
+    margin: 0px 500px 15px 500px;
+    /* border-radius: 0px 0px 15px 15px; */
+}
+
+nav ul {
+    display: flex;
+    height: 6vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    
+}
+
+nav a {
+    display: block;
+    color: #121212;
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform 0.55s ease;
+}
+
+nav a:hover {
+    transform: scale(1.15);
+    transition: transform 0.55s ease;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.home-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    height: calc(100vh - 100px);   
+}
+
+h1 {
+    font-size: 120px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top: -30px;
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+p {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform 0.55s ease;
+}
+
+a:hover {
+    transform: scale(1.15);
+    transition: transform 0.55s ease;
+}
+
+.projects-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: calc(100vh);   
+}
+
+
+.about-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: calc(100vh);   
+}
+
+.container-about-flex {
+    margin: 76px;
+}
+
+h4 {
+    font-size: 24px;
+    margin: 15;
+}
+
+h3 {
+    font-size: 64px;
+    margin: 0;
+}
+
+
+img {
+    margin: 0 10px 0 10px;
+    transform: scale(1);
+    transition: transform 0.55s ease;
+}
+
+img:hover {
+    transform: scale(1.15);
+    transition: transform 0.55s ease;
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -50px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -50px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    nav {
+        margin: 0px 15px 15px 15px;
+        border-radius: 15px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .home-flex {
+        height: calc(100vh);   
+    }
+    
+
+    .projects-flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    p {
+        margin-top: 5px;
+        padding-left: 0px;
+
+    }
+    .container-projects-flex {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .about-flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-about-flex {
+        margin: 0;
+        margin-top: 50px;
+        padding: 0;
+        align-content: flex-start;
+    }
+
+    iframe {
+        height: 150px;
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 72px;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 24px;
+        margin-top: -16px;
+    }
+
+    h4 {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    h3 {
+        font-size: 36px;
+        margin: 0;
+    }
+    
+    
+    
+}
+
